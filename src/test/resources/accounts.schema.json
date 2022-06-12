@@ -3,13 +3,7 @@
   "type": "array",
   "items": {
     "type": "object",
-    "required": [
-      "id",
-      "name",
-      "number",
-      "balance",
-      "currency"
-    ],
+    "required": ["id", "name", "number", "balance", "currency" ],
     "additionalProperties": false,
     "properties": {
       "id": {
@@ -26,11 +20,10 @@
       "balance": {
         "type": "integer"
       },
-      "currency": {
-        "type": [
-          "string"
-        ]
+      "currency": {"enum":["RUB", "USD"]
       }
     }
   }
 }
+
+
